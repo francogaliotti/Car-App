@@ -4,6 +4,7 @@ import tw from 'twin.macro'
 import McClarenCarImg from '../../../assets/images/mclaren-orange-big.png'
 import BlobImg from '../../../assets/images/blob.svg'
 import { SCREENS } from '../../components/responsive'
+import { Button } from '../../components/button'
 
 const TopSectionContainer = styled.div`
     min-height: 400px;
@@ -61,8 +62,6 @@ const Description = styled.p`
         lg:text-sm
         xl:text-lg
         sm:max-h-full
-        
-        max-h-12
         text-gray-800
     `}
 `
@@ -131,6 +130,13 @@ const StandAloneCard = styled.div`
         top: -9em;
     }
 `
+const ButtonsContainer = styled.div`
+    ${tw`
+        flex
+        flex-wrap
+        mt-4
+    `}
+`
 
 
 export function TopSection() {
@@ -142,6 +148,10 @@ export function TopSection() {
                     el mejor precio para vos y obtene los autos de mejor calidad por el tiempo
                     que desees.
                 </Description>
+                <ButtonsContainer>
+                    <Button text="Alquila tu Auto" />
+                    <Button theme="filled" text="Vende tu Auto" />
+                </ButtonsContainer>
             </LeftContainer>
             <RightContainer>
                 <BlobContainer>
