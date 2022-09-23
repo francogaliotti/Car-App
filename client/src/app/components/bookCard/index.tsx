@@ -117,7 +117,7 @@ export function BookCard() {
         <ItemContainer>
             <Icon>
                 <FontAwesomeIcon icon={faCalendarAlt} />
-                <Name onClick={toggleStartDateCalendar}> Fecha Retiro</Name>
+                <Name onClick={toggleStartDateCalendar}> Fecha de Retiro</Name>
                 <SmallIcon>
                     <FontAwesomeIcon icon={isStartCalendarOpen ? faCaretUp : faCaretDown}/>
                 </SmallIcon>
@@ -128,7 +128,7 @@ export function BookCard() {
         <ItemContainer>
             <Icon>
                 <FontAwesomeIcon icon={faCalendarAlt} />
-                <Name onClick={toggleEndDateCalendar}> Fecha Retorno</Name>
+                <Name onClick={toggleEndDateCalendar}> Fecha de Retorno</Name>
                 <SmallIcon>
                     <FontAwesomeIcon icon={isEndCalendarOpen ? faCaretUp : faCaretDown}/>
                 </SmallIcon>
