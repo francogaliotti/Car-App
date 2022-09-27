@@ -6,6 +6,7 @@ import { NavItems } from './navItems'
 
 const NavbarContainer = styled.div`
     min-height: 68px;
+    z-index: 10;
     ${tw`
         w-full
         max-w-screen-2xl
@@ -23,7 +24,7 @@ export function Navbar() {
     return (
         <NavbarContainer>
             <LogoContainer>
-                <Logo />
+                <Logo color="dark" bgColor='white'/>
             </LogoContainer>
             <NavItems/>
         </NavbarContainer>
